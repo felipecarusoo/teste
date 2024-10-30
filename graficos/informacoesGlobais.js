@@ -2,7 +2,7 @@ const url = 'https://raw.githubusercontent.com/teuzsw/graficos-alura/refs/heads/
 
 async function visualizarInformacoes() {
     const resposta = await fetch(url) 
-    const dados = resposta.json()
+    const dados = await resposta.json()
     console.log(dados);
 }
 
